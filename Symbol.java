@@ -5,8 +5,6 @@
  * Class: 	Symbol
  */
 
-package linker;
-
 //symbol class, represents one symbol of the symbol table
 public class Symbol {
 	String label;

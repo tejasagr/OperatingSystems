@@ -5,8 +5,6 @@
  * Class: 	Module
  */
 
-package linker;
-
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 

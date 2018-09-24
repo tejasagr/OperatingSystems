@@ -5,8 +5,6 @@
  * Class: 	Driver
  */
 
-package linker;
-
 import java.util.Scanner;
 import java.util.LinkedHashMap;
 import java.util.Map;
