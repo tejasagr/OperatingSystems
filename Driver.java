@@ -10,7 +10,6 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.ArrayList;
 
-
 //main class that drives the program, the two-pass linker
 public class Driver {
 	static Scanner keyboard = new Scanner(System.in);
@@ -204,7 +203,15 @@ public class Driver {
 				
 				//print results and relevant errors
 				String result = opcode + String.format("%03d", addressField);
-				System.out.print((i + module.baseAddress) + ":\t" + result);
+				int instrNum = i + module.baseAddress;
+				System.out.print(instrNum + ":");
+				if (instrNum < 10)
+					System.out.print("  ");
+				else if (instrNum < 100)
+					System.out.print(" ");
+				System.out.print(result);
+				
+				
 				if(absAddressAdjusted)
 					System.out.print(" Error: Absolute address exceeds machine size; largest legal value used.");
 				if(symbolNotAssigned)
